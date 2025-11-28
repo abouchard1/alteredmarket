@@ -54,7 +54,7 @@
       <template v-slot:default="{ items }">
         <v-container class="pa-2" fluid>
           <v-row dense>
-            <v-col v-for="item in items" :key="item.title" cols="12" sm="6" md="4" lg="2">
+            <v-col v-for="item in items" :key="item.raw.id" cols="12" sm="6" md="4" lg="2">
               <v-card
                 :href="`https://www.altered.gg/fr-fr/cards/${item.raw.id}/offers`"
                 target="_blank"
